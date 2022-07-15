@@ -42,7 +42,6 @@ main header button {
   outline: none;
   border: none;
   cursor: pointer;
-  display: none;
 }
 main div.container {
   background-color: #7e878c;
@@ -154,9 +153,6 @@ main div.container div.chat-window div.user-input button {
 @media screen and (max-width: 900px) {
   main {
     width: 95%;
-  }
-  main header button {
-    display: block;
   }
   main div.container {
     position: relative;

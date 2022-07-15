@@ -29,7 +29,7 @@ io.on("connection", (socket) => {
     io.emit("user-list", users);
   });
 
-  socket.on("disconnected", () => {
+  socket.on("disconnect", () => {
     socket.broadcast.emit("user-disconnected", (user = users[socket.id]));
     delete users[socket.id];
     io.emit("user-list", users);
